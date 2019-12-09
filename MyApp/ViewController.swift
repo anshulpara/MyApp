@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import MyFramework1
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        Class1().printClassName()
     }
 
 
