@@ -10,7 +10,4 @@
    <FileRef
       location = "group:MyFramework2/MyFramework2.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>

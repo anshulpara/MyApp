@@ -7,6 +7,7 @@
 //
 
 import MyFramework2
+import RxCocoa
 
 public class Class1: NSObject {
 

@@ -11,6 +11,6 @@ import RxCocoa
 public class Class2: NSObject {
 
     public func printClassName() {
-        print("Class2 method called")
+        print("Class2 method called = \(RxCocoaVersionNumber)")
     }
 }

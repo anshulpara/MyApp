@@ -12,7 +12,6 @@
 		12C033DE2397EBD4007D8F3D /* MyFramework1.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C033D02397EBD4007D8F3D /* MyFramework1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12C034262397F4FD007D8F3D /* Class1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C034252397F4FD007D8F3D /* Class1.swift */; };
 		12C0342D2397F7FE007D8F3D /* MyFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C034212397EE8F007D8F3D /* MyFramework2.framework */; };
-		360B851976051A41941D048C /* libPods-MyFramework1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34BEF59B88279795665EA86 /* libPods-MyFramework1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +24,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12E8D2B0239FDE9B00DBAB50 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		12C033CD2397EBD4007D8F3D /* MyFramework1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C033D02397EBD4007D8F3D /* MyFramework1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework1.h; sourceTree = "<group>"; };
@@ -35,9 +46,9 @@
 		12C034212397EE8F007D8F3D /* MyFramework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFramework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C034252397F4FD007D8F3D /* Class1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class1.swift; sourceTree = "<group>"; };
 		12C034292397F5EC007D8F3D /* MyFramework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFramework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D3A9150CAF5B7667C9299E3 /* Pods-MyFramework1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFramework1.release.xcconfig"; path = "Target Support Files/Pods-MyFramework1/Pods-MyFramework1.release.xcconfig"; sourceTree = "<group>"; };
-		B34BEF59B88279795665EA86 /* libPods-MyFramework1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFramework1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F30D2B6831F8C9EA4A5BBB04 /* Pods-MyFramework1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFramework1.debug.xcconfig"; path = "Target Support Files/Pods-MyFramework1/Pods-MyFramework1.debug.xcconfig"; sourceTree = "<group>"; };
+		12E8D2B1239FDECE00DBAB50 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		12E8D2B2239FDECE00DBAB50 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = ../Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		12E8D2B3239FDECE00DBAB50 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C0342D2397F7FE007D8F3D /* MyFramework2.framework in Frameworks */,
-				360B851976051A41941D048C /* libPods-MyFramework1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,10 +74,12 @@
 		12C033C32397EBD4007D8F3D = {
 			isa = PBXGroup;
 			children = (
+				12E8D2B1239FDECE00DBAB50 /* RxCocoa.framework */,
+				12E8D2B2239FDECE00DBAB50 /* RxRelay.framework */,
+				12E8D2B3239FDECE00DBAB50 /* RxSwift.framework */,
 				12C033CF2397EBD4007D8F3D /* MyFramework1 */,
 				12C033DA2397EBD4007D8F3D /* MyFramework1Tests */,
 				12C033CE2397EBD4007D8F3D /* Products */,
-				313C0F943A73A647604AEB42 /* Pods */,
 				1643D31BA0DF01F9B2FC24F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -105,19 +117,8 @@
 			children = (
 				12C034292397F5EC007D8F3D /* MyFramework2.framework */,
 				12C034212397EE8F007D8F3D /* MyFramework2.framework */,
-				B34BEF59B88279795665EA86 /* libPods-MyFramework1.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		313C0F943A73A647604AEB42 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F30D2B6831F8C9EA4A5BBB04 /* Pods-MyFramework1.debug.xcconfig */,
-				6D3A9150CAF5B7667C9299E3 /* Pods-MyFramework1.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +139,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C033E12397EBD4007D8F3D /* Build configuration list for PBXNativeTarget "MyFramework1" */;
 			buildPhases = (
-				48B4B4AAA8B55496CBA09201 /* [CP] Check Pods Manifest.lock */,
 				12C033C82397EBD4007D8F3D /* Headers */,
 				12C033C92397EBD4007D8F3D /* Sources */,
 				12C033CA2397EBD4007D8F3D /* Frameworks */,
@@ -160,6 +160,7 @@
 				12C033D22397EBD4007D8F3D /* Sources */,
 				12C033D32397EBD4007D8F3D /* Frameworks */,
 				12C033D42397EBD4007D8F3D /* Resources */,
+				12E8D2B0239FDE9B00DBAB50 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -225,31 +226,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		48B4B4AAA8B55496CBA09201 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyFramework1-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12C033C92397EBD4007D8F3D /* Sources */ = {
@@ -401,7 +377,6 @@
 		};
 		12C033E22397EBD4007D8F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30D2B6831F8C9EA4A5BBB04 /* Pods-MyFramework1.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -416,10 +391,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.rsl.MyFramework1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -431,7 +403,6 @@
 		};
 		12C033E32397EBD4007D8F3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D3A9150CAF5B7667C9299E3 /* Pods-MyFramework1.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,10 +417,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.rsl.MyFramework1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
