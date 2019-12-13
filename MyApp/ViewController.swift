@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Did load 5
+        // Did load 6
         Class1().printClassName()
     }
 
